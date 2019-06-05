@@ -5,7 +5,446 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98d48723-206c-43e6-83b4-736ba590c590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/DatabaseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/LiteratureDatabaseException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/MainService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/ValidationHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Database.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Publication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/PublicationType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/ui/ConsoleHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/bin/schemagen.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/bin/schemagen.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/bin/xjc.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/bin/xjc.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/ch07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/download/JaxbCDATASample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/figures/classLoaderFAQ.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/annot-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/annot-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/25.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/26.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/27.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/28.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/29.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/30.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/callouts/9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/caution.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/caution.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/caution.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/caution.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/caution.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/important.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/prev.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/tip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/colorsvg/warning.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/draft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/home.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/important.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/important.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/important.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/important.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/next.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/note.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/note.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/prev.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/prev.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/tip.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/tip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/tip.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/toc-blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/toc-minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/toc-plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/warning.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/warning.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/icons/warning.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/release-documentation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/release-documentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/docs/style/documentation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/FastInfoset.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/codemodel.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/dtd-parser.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/istack-commons-runtime.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/istack-commons-tools.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/jakarta.activation-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/jakarta.xml.bind-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/jaxb-jxc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/jaxb-runtime.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/jaxb-xjc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/relaxng-datatype.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/rngom.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/stax-ex.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/txw2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/mod/xsom.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/catalog.cat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/s4s/XMLSchema.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/s4s/datatypes.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/test.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/catalog-resolver/xml.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/simple.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/src/CustomCharacterEscapeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/character-escape/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/def.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/src/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/src/org/acme/Bar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/src/org/acme/Foo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/class-resolver/src/org/acme/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/create-marshal/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/create-marshal/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/create-marshal/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/create-marshal/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/create-marshal/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/create-marshal/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/cycle-recovery/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/cycle-recovery/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/cycle-recovery/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/cycle-recovery/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/cycle-recovery/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/datatypeconverter/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/datatypeconverter/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/datatypeconverter/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/datatypeconverter/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/datatypeconverter/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/datatypeconverter/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/nameCard.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/nameCard.jaxb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/src/DTDSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/src/foo/MyRootClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/dtd/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/folder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/folder.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/element-substitution/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/binding.xjb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/external-customize/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/binding.xjb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/example.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/example.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/fix-collides/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/inline-customize/src/primer/MyDatatypeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/src/cardfile/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/src/cardfile/BusinessCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/src/cardfile/jaxb.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-create-marshal/src/cardfile/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/src/address/PurchaseOrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/src/address/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAccessorOrder/src/address/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/src/shoppingCart/AdapterPurchaseListToHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/src/shoppingCart/KitchenWorldBasket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/src/shoppingCart/PartEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/src/shoppingCart/PurchaseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAdapter/src/shoppingCartData.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/src/address/CreditCardVendor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/src/address/PurchaseOrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlAttribute/src/address/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/src/address/CreditCardVendor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/src/address/PurchaseOrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlRootElement/src/address/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/src/address/TrackingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/src/address/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlSchemaType/src/trackingData.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/src/address/PurchaseOrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/src/address/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/src/address/USAddressFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/j2s-xmlType/src/testData.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/poInput.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/locator-support/src/Locatable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/modify-marshal/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/modify-marshal/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/modify-marshal/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/modify-marshal/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/modify-marshal/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/modify-marshal/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/bar.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/foo.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/src/NamespacePrefixMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/src/PrefixExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/test1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/test2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/namespace-prefix/test3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/Primer.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/src/Splitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/partial-unmarshalling/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/contact.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/pull-parser/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/relaxng/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/relaxng/formula.rng" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/relaxng/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/relaxng/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/relaxng/src/RELAXNGExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/relaxng/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/j2s/class-propOrder-complextype/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/j2s/class-simpletype/Foo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/derivedtype/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/derivedtype/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/derivedtype/PurchaseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/derivedtype/UKAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/derivedtype/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/javabean-nosetter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/javabean-nosetter/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/spec-samples/runtime/javabean-nosetter/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/Primer.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/src/primer/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/src/primer/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/src/primer/PurchaseOrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/src/primer/PurchaseOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/src/primer/USAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/streaming-unmarshalling/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/itinerary.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/itinerary.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/src/extend/AutoTypeExtend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/src/extend/PlaneTypeExtend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/src/extend/TrainTypeExtend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/subgroup-extend/src/extend/TravelTypeExtend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/synchronized-methods/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/synchronized-methods/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/synchronized-methods/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/synchronized-methods/poInput.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/synchronized-methods/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/synchronized-methods/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/address.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/catalog.cat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/ipo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/ipo.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/ustaxexemptpo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/type-substitution/ustaxexemptpo.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-read/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-read/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-read/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-read/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-read/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-read/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-validate/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-validate/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-validate/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-validate/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-validate/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/unmarshal-validate/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/po.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/updateablePartialBind/src/UpdateablePartialBinding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/po.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/poInput.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/src/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/vendor-extensions/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/message.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/src/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-channel/src/TestServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/Primer.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/build.golden.regexp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jaxb/2.3.2/jaxb-ri-2.3.2/jaxb-ri/samples/xml-stylesheet/test.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -85,8 +524,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="74" column="72" selection-start-line="74" selection-start-column="72" selection-end-line="74" selection-end-column="72" />
+            <state relative-caret-position="421">
+              <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#validate#0;class#MainServiceImpl#0" />
@@ -145,6 +584,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,10 +597,10 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
@@ -186,7 +626,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Assignment2 2 [schemagen]">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.uniba.wiai.dsg.ajp.assignment2.literature.Main" />
       <module name="Assignment2" />
@@ -285,8 +725,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Assignment2 2 [schemagen]" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.Assignment2 2 [schemagen]" />
         <item itemvalue="Gradle.Assignment2 [preparejaxb]" />
         <item itemvalue="Gradle.Assignment2 [run]" />
         <item itemvalue="Gradle.Assignment2 [test]" />
@@ -340,8 +780,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.1795422" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.18168813" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.17739628" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,7 +797,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.1812652" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3296837" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3108108" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32846716" />
@@ -601,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="74" column="72" selection-start-line="74" selection-start-column="72" selection-end-line="74" selection-end-column="72" />
+        <state relative-caret-position="421">
+          <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#validate#0;class#MainServiceImpl#0" />
