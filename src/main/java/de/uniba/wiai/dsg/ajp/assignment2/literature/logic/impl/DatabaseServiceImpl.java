@@ -2,6 +2,7 @@ package de.uniba.wiai.dsg.ajp.assignment2.literature.logic.impl;
 
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -71,8 +72,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 	@Override
 	public void removePublicationByID(String id)
 			throws LiteratureDatabaseException {
-		// TODO Auto-generated method stub
-		Author db = new Author();
+		Database db = new Database();
 
 		if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
 			db.getPublications().contains(id);
@@ -92,9 +92,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 	@Override
 	public void removeAuthorByID(String id)
 			throws LiteratureDatabaseException {
-		// TODO Auto-generated method stub
-
-		Publication db = new Publication();
+		Database db = new Database();
 
 		if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
 			db.getAuthors().contains(id);
@@ -167,8 +165,20 @@ public class DatabaseServiceImpl implements DatabaseService {
 	 */
 	@Override
 	public void printXMLToConsole() throws LiteratureDatabaseException {
-		// TODO Auto-generated method stub
 
+		try {
+			JAXBContext jaxbContext = JAXBContext.newInstance(Database.class);
+			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+			Database db = new Database();
+			db.getAuthors();
+			db.getPublications();
+			//Marshal and print to console
+			jaxbMarshaller.marshal( db, new PrintWriter( System.out ) );
+
+		} catch (JAXBException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -179,23 +189,25 @@ public class DatabaseServiceImpl implements DatabaseService {
 	 *                                     marshalling the current database
 	 */
 	@Override
-	public void saveXMLToFile(String path) throws LiteratureDatabaseException {
-
+	public void saveXMLToFile(String path) throws LiteratureDatabaseException{
 
 		if (path != null && Files.exists(Paths.get(path)) && !path.isEmpty()) {
-			try {
+			try {//Create JAXB Context
 				JAXBContext jaxbContext = JAXBContext.newInstance(Database.class);
-
+				//Create Marshaller
 				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
-				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE); // To format XML
-
-				//Print XML String to Console
-				jaxbMarshaller.marshal(path, new File("database.xml"));
+				//Required formatting??
+				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+				//Store XML to File
+				File file = new File("database.xml");
+				//marshalling to XML File
+				jaxbMarshaller.marshal(path, file);
 
 			} catch (JAXBException e) {
 				e.printStackTrace();
 			}
+		} else {
+			throw new LiteratureDatabaseException();
 		}
 
 
@@ -206,9 +218,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 		List<Author> authorsList = new ArrayList<>();
 
 		for (Author element : authors) {
-			if (!authorsList.add(element)) {
-				return false;
-			}
+			if (!authorsList.add(element)) return false;
 		}
 		return true;
 

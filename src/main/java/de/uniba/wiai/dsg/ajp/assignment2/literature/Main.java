@@ -34,7 +34,6 @@ public class Main {
 			dataB.getPublications();
 
 
-
 			// automatic Java Code -->  XML Document  //Marshalling
 			Marshaller ms = context.createMarshaller();
 			ms.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -48,7 +47,11 @@ public class Main {
 		try{
 			MainServiceImpl dbs =new MainServiceImpl();
 			dbs.validate("database.xml");
-			dbs.load("database2.xml");
+			//dbs.load("database.xml");
+			DatabaseServiceImpl dbI =new DatabaseServiceImpl();
+
+			dbI.printXMLToConsole();
+
 		}catch (LiteratureDatabaseException e){
 			e.printStackTrace();
 		}

@@ -1,79 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="database" type="databaseType"/>
-  <xs:complexType name="authorType">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="database" type="database"/>
+
+  <xs:complexType name="database">
     <xs:sequence>
-      <xs:element name="email">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="fowler@acm.org"/>
-            <xs:enumeration value="kent@beck.com"/>
-            <xs:enumeration value="martin@robert.com"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="id">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="mfowler"/>
-            <xs:enumeration value="kbeck"/>
-            <xs:enumeration value="mrobert"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="name">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="Martin Fowler"/>
-            <xs:enumeration value="Kent Beck"/>
-            <xs:enumeration value="Martin C. Robert"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="publication" maxOccurs="unbounded" minOccurs="0">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="DSL2010"/>
-            <xs:enumeration value="Cool123"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
+      <xs:element name="author" type="author" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="publication" type="publication" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="publicationType">
+
+  <xs:complexType name="author">
     <xs:sequence>
-      <xs:element name="author" maxOccurs="unbounded" minOccurs="0">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="mfowler"/>
-            <xs:enumeration value="kbeck"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="id">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="DSL2010"/>
-            <xs:enumeration value="Cool123"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="title">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="Domain-Specific Languages"/>
-            <xs:enumeration value="Really cool title"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute type="xs:string" name="type" use="optional"/>
-    <xs:attribute type="xs:string" name="yearPublished" use="optional"/>
-  </xs:complexType>
-  <xs:complexType name="databaseType">
-    <xs:sequence>
-      <xs:element type="authorType" name="author" maxOccurs="unbounded" minOccurs="0"/>
-      <xs:element type="publicationType" name="publication" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="email" type="xs:string"/>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:any processContents="skip" namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
+
+  <xs:complexType name="publication">
+    <xs:sequence>
+      <xs:any processContents="skip" namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="title" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="publicationType"/>
+    <xs:attribute name="yearPublished" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="publicationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="article"/>
+      <xs:enumeration value="techreport"/>
+      <xs:enumeration value="book"/>
+      <xs:enumeration value="masterthesis"/>
+      <xs:enumeration value="phdthesis"/>
+      <xs:enumeration value="inproceeding"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
+

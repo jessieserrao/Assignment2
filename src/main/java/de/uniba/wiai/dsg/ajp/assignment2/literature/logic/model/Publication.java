@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.StringJoiner;
 
 public class Publication {
-
 	private String id;
 	private String title;
 	private int yearPublished;

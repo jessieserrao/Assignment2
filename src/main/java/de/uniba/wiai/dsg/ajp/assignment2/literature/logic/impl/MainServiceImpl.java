@@ -42,8 +42,7 @@ public class MainServiceImpl implements MainService {
 	public void validate(String path) throws LiteratureDatabaseException {
 
 		try {
-			SchemaFactory factory =
-					SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+			SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			Schema schema = factory.newSchema(new File("schema1.xsd"));
 			Validator validator = schema.newValidator();
 			validator.validate(new StreamSource(new File(path)));
@@ -69,17 +68,18 @@ public class MainServiceImpl implements MainService {
 	 */
 	@Override
 	public DatabaseService load(String path) throws LiteratureDatabaseException {
+		File xmlFile = new File(path);
+		JAXBContext jaxbContext;
+		try {
+			jaxbContext = JAXBContext.newInstance(DatabaseServiceImpl.class);
 
-		try {JAXBContext context;
-			//call the XmlRootElement to create the object to be manipulated
-			context = JAXBContext.newInstance(DatabaseServiceImpl.class);
+			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
-			// automatic XML doc -->Java Code   // Unmarshalling
-			Unmarshaller um = context.createUnmarshaller();
-			DatabaseServiceImpl dataB = (DatabaseServiceImpl) um.unmarshal(new File(path));
-			dataB.getAuthors();
-			dataB.getPublications();
-			return dataB;
+			DatabaseServiceImpl db = (DatabaseServiceImpl) jaxbUnmarshaller.unmarshal(xmlFile);
+
+			System.out.println(db);
+
+			return db;
 
 		}catch (JAXBException e){
 			System.out.println("Exception: "+e.getMessage());
@@ -97,6 +97,7 @@ public class MainServiceImpl implements MainService {
 	@Override
 	public DatabaseService create() throws LiteratureDatabaseException {
 		// TODO!!!!!!!!!!!!!!!!!!!!!!!!!
+		DatabaseServiceImpl dbI = new DatabaseServiceImpl();
 
 		return null;
 	}
