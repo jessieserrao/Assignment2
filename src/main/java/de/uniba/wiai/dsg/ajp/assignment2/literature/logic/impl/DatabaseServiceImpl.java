@@ -124,6 +124,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 		else if ( id != null && id.isEmpty() && ValidationHelper.isId(id) ) {
 			newAuthor.setId(id);
 		}
+
 	}
 
 	/**
@@ -171,8 +172,6 @@ public class DatabaseServiceImpl implements DatabaseService {
 			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			Database db = new Database();
-			db.getAuthors();
-			db.getPublications();
 			//Marshal and print to console
 			jaxbMarshaller.marshal( db, new PrintWriter( System.out ) );
 

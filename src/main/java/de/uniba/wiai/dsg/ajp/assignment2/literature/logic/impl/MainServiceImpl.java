@@ -68,22 +68,23 @@ public class MainServiceImpl implements MainService {
 	 */
 	@Override
 	public DatabaseService load(String path) throws LiteratureDatabaseException {
-		File xmlFile = new File(path);
+
 		JAXBContext jaxbContext;
 		try {
 			jaxbContext = JAXBContext.newInstance(DatabaseServiceImpl.class);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
-			DatabaseServiceImpl db = (DatabaseServiceImpl) jaxbUnmarshaller.unmarshal(xmlFile);
+			DatabaseServiceImpl db = (DatabaseServiceImpl) jaxbUnmarshaller.unmarshal(new File(path));
 
 			System.out.println(db);
 
 			return db;
 
 		}catch (JAXBException e){
-			System.out.println("Exception: "+e.getMessage());
-			return null;
+			System.out.println("Exception: "+e.getMessage()+ e.getLinkedException());
+			throw new LiteratureDatabaseException();
+
 		}
 	}
 
@@ -95,11 +96,16 @@ public class MainServiceImpl implements MainService {
 	 * @throws LiteratureDatabaseException
 	 */
 	@Override
-	public DatabaseService create() throws LiteratureDatabaseException {
-		// TODO!!!!!!!!!!!!!!!!!!!!!!!!!
-		DatabaseServiceImpl dbI = new DatabaseServiceImpl();
+	public DatabaseService create() {
 
-		return null;
+			DatabaseServiceImpl dbI = new DatabaseServiceImpl();
+			if ( dbI == null ) {
+				return dbI;
+			}else {
+				return null; // @throws LiteratureDatabaseException
+			}
+
+
 	}
 
 }

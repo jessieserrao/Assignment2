@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.LinkedList;
 import java.util.List;
 
-@XmlRootElement
+@XmlRootElement(name="database")
 public class Database {
 
 	private List<Author> authors = new LinkedList<>();

@@ -14,12 +14,16 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import static de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.PublicationType.BOOK;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO startet eure Anwendung ueber diese main-Methode
-
+		/**
 		JAXBContext context;
 
 		try{
@@ -43,18 +47,28 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		 */
 
 		try{
-			MainServiceImpl dbs =new MainServiceImpl();
-			dbs.validate("database.xml");
-			//dbs.load("database.xml");
-			DatabaseServiceImpl dbI =new DatabaseServiceImpl();
 
-			dbI.printXMLToConsole();
+
+			MainServiceImpl dbs =new MainServiceImpl();
+			dbs.create();
+			//dbs.validate("database.xml");
+			//dbs.load("database.xml");
+
+
+			DatabaseServiceImpl dbI =new DatabaseServiceImpl();
+			//dbI.addAuthor("Jessie", "jessie@hotmail.com", "10" );
+			//dbI.addPublication("titulo", 1919, BOOK, author, "33" );
+
+			//dbI.printXMLToConsole();
 
 		}catch (LiteratureDatabaseException e){
 			e.printStackTrace();
 		}
+
+
 
 
 
