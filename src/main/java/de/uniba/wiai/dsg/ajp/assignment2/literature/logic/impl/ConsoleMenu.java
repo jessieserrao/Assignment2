@@ -6,6 +6,7 @@ import de.uniba.wiai.dsg.ajp.assignment2.literature.ui.ConsoleHelper;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.MessageFormat;
 
 
 // switch cases implementation are incomplete and load issue still unsolved..  OBS:
@@ -14,7 +15,7 @@ import java.io.InputStreamReader;
  das Einlesen von Zeichenketten, Zahlen und der Auswahl eines oder mehrerer Elemente aus einem Array von der Konsole.
  Die JavaDoc-Beschreibungen der oeffentlichen Methoden enthalten Anwendungsbeispiele, die Sie als Starthilfe verwenden koennen.
 */
-public class ConsoleMenu {
+public class ConsoleMenu extends DatabaseServiceImpl {
 
     public ConsoleMenu(){ super(); }
 
@@ -24,9 +25,9 @@ public class ConsoleMenu {
             InputStreamReader isr = new InputStreamReader(System.in);
             BufferedReader br = new BufferedReader(isr);
 
-            int Zahl=0;
+            int Zahl=1;
             while (Zahl !=0) {// I cant think a better way to solve this condition() right now
-                System.out.println("::::::::::::::::::::::::: Uni Bamberg Database :::::::::::::::::::::::::" +
+                System.out.println("::::::::::::::::::::::::: Uni Bamberg Database :::::::::::::::::::::::::\n" +
                         "( 1 ) Load and Validate Literature Database\n" +
                         "( 2 ) Create New Literature Database\n" +
                         "( 0 ) Exit System\n" +
@@ -37,15 +38,20 @@ public class ConsoleMenu {
                 switch (option) {
                     case 1: //Load and Validate Literature Database !! here still doesn't working because of the  load
                         MainServiceImpl msI = new MainServiceImpl();
-                        System.out.println("Please insert the XML File to be validated: ");
+                        System.out.println("Please insert the XML File to be loaded in the Database and validated: ");
                         //msI.load("");
                         //msI.validate("");
                         break;
 
                     case 2: //Create New Literature Database and calls CreateNewDatabase method.
+                        System.out.println("########## UNI Bamberg Database ########## ");
                         MainServiceImpl mainService = new MainServiceImpl();
                         mainService.create();
                         ConsoleMenu.CreateNewDatabase();
+
+                    case 3:
+                        // give a option to end the program and close the Ressource
+                        break;
                 }
             }
         } catch (IOException e) {
@@ -115,6 +121,9 @@ public class ConsoleMenu {
            }
        }catch (LiteratureDatabaseException e) {
            System.out.println("the following Error occurred: " + e.getMessage());
+
+       }catch (IOException f){
+           System.out.println(MessageFormat.format("the following Error occurred: {0}", f.getMessage()));
        }finally {
            // we need to Close the Reader Input otherwise when it is already closed then keine Ahnung :p
           // br.close()

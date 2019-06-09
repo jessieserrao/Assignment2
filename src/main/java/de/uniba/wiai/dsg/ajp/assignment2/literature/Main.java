@@ -3,6 +3,7 @@ package de.uniba.wiai.dsg.ajp.assignment2.literature;
 
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.DatabaseService;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.LiteratureDatabaseException;
+import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.impl.ConsoleMenu;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Author;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Database;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.impl.DatabaseServiceImpl;
@@ -49,7 +50,7 @@ public class Main {
 		}
 		 */
 
-		try{
+			ConsoleMenu.Menu();
 
 
 			MainServiceImpl dbs =new MainServiceImpl();
@@ -64,9 +65,6 @@ public class Main {
 
 			//dbI.printXMLToConsole();
 
-		}catch (LiteratureDatabaseException e){
-			e.printStackTrace();
-		}
 
 
 
