@@ -21,8 +21,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-public class DatabaseServiceImpl implements DatabaseService {
-
+public class DatabaseServiceImpl extends Database implements DatabaseService{
 
 	/**
 	 * Adds a new publication.
@@ -58,6 +57,8 @@ public class DatabaseServiceImpl implements DatabaseService {
 		}
 		else if (ValidationHelper.isId(id) && id != null && !id.isEmpty() && !publication.getId().contains(id)) {
 			publication.setId(id);
+		}else {
+			throw new LiteratureDatabaseException();
 		}
 	}
 
@@ -77,6 +78,8 @@ public class DatabaseServiceImpl implements DatabaseService {
 		if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
 			db.getPublications().contains(id);
 			db.getPublications().remove(id);
+		} else {
+			throw new LiteratureDatabaseException();
 		}
 	}
 
@@ -97,6 +100,8 @@ public class DatabaseServiceImpl implements DatabaseService {
 		if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
 			db.getAuthors().contains(id);
 			db.getAuthors().remove(id);
+		} else {
+			throw new LiteratureDatabaseException();
 		}
 	}
 
@@ -123,7 +128,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 		}
 		else if ( id != null && id.isEmpty() && ValidationHelper.isId(id) ) {
 			newAuthor.setId(id);
-		}
+		} else {throw new LiteratureDatabaseException();}
 
 	}
 
@@ -176,7 +181,8 @@ public class DatabaseServiceImpl implements DatabaseService {
 			jaxbMarshaller.marshal( db, new PrintWriter( System.out ) );
 
 		} catch (JAXBException e) {
-			e.printStackTrace();
+			System.out.println("the following Error occurred: " + e.getMessage());
+			throw new LiteratureDatabaseException();
 		}
 	}
 
@@ -203,7 +209,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 				jaxbMarshaller.marshal(path, file);
 
 			} catch (JAXBException e) {
-				e.printStackTrace();
+				System.out.println("the following Error occurred: " + e.getMessage());
 			}
 		} else {
 			throw new LiteratureDatabaseException();
@@ -211,7 +217,6 @@ public class DatabaseServiceImpl implements DatabaseService {
 
 
 	}
-
 
 	public boolean DoNothasDuplicate(List<Author> authors) {
 		List<Author> authorsList = new ArrayList<>();
@@ -222,7 +227,6 @@ public class DatabaseServiceImpl implements DatabaseService {
 		return true;
 
 	}
-
 
 
 }

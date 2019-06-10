@@ -18,7 +18,7 @@ import javax.xml.validation.Validator;
 import java.io.File;
 import java.io.IOException;
 
-public class MainServiceImpl implements MainService {
+public class MainServiceImpl extends DatabaseServiceImpl implements MainService {
 
 	/**
 	 * Default constructor required for grading.
@@ -43,18 +43,17 @@ public class MainServiceImpl implements MainService {
 
 		try {
 			SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-			Schema schema = factory.newSchema(new File("schema1.xsd"));
+			Schema schema = factory.newSchema(new File("schema2.xsd"));
 			Validator validator = schema.newValidator();
 			validator.validate(new StreamSource(new File(path)));
 			System.out.println("The XML Document: " + path + " is valid \n" );
 
 		} catch (SAXException e) {
-			e.printStackTrace();
-
-			System.out.println("Exception: "+e.getMessage());
+			System.out.println("the following Error occurred: " + e.getMessage());
+			throw new LiteratureDatabaseException();
 		} catch (IOException e) {
-			e.printStackTrace();
-			System.out.println("Exception: "+e.getMessage());
+			System.out.println("the following Error occurred: " + e.getMessage());
+			throw new LiteratureDatabaseException();
 		}
 	}
 
@@ -76,14 +75,14 @@ public class MainServiceImpl implements MainService {
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
 			DatabaseServiceImpl db = (DatabaseServiceImpl) jaxbUnmarshaller.unmarshal(new File(path));
-
-			System.out.println(db);
-
+			db.getAuthors();
+			db.getPublications();
 			return db;
 
 		}catch (JAXBException e){
-			System.out.println("Exception: "+e.getMessage()+ e.getLinkedException());
+			System.out.println("Exception: "+e.getMessage() + e.getErrorCode());
 			throw new LiteratureDatabaseException();
+
 
 		}
 	}
@@ -96,16 +95,9 @@ public class MainServiceImpl implements MainService {
 	 * @throws LiteratureDatabaseException
 	 */
 	@Override
-	public DatabaseService create() {
-
+	public DatabaseService create() throws LiteratureDatabaseException{
 			DatabaseServiceImpl dbI = new DatabaseServiceImpl();
-			if ( dbI == null ) {
-				return dbI;
-			}else {
-				return null; // @throws LiteratureDatabaseException
-			}
-
-
+			return dbI;
 	}
 
 }

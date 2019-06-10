@@ -7,7 +7,7 @@ import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Database;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Publication;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.PublicationType;
 
-public interface DatabaseService {
+public interface DatabaseService{
 
     /**
      * Adds a new publication.

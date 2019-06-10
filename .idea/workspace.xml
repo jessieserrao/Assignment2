@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c007a95d-7f6a-484f-a025-1278a9aa5143" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Assignment2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema1.xsd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -17,6 +26,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="15" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -56,23 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="351">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="39" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -80,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="341">
+              <caret line="183" column="12" selection-start-line="183" selection-start-column="12" selection-end-line="184" selection-end-column="52" />
               <folding>
                 <element signature="docComment;method#addPublication#0;class#DatabaseServiceImpl#0" />
                 <element signature="method#addPublication#0;class#DatabaseServiceImpl#0" />
@@ -89,7 +86,8 @@
                 <element signature="method#removePublicationByID#0;class#DatabaseServiceImpl#0" />
                 <element signature="docComment;method#removeAuthorByID#0;class#DatabaseServiceImpl#0" />
                 <element signature="method#removeAuthorByID#0;class#DatabaseServiceImpl#0" />
-                <element signature="e#3438#3507#1" />
+                <element signature="docComment;method#addAuthor#0;class#DatabaseServiceImpl#0" />
+                <element signature="method#addAuthor#0;class#DatabaseServiceImpl#0" />
                 <element signature="docComment;method#getPublications#0;class#DatabaseServiceImpl#0" />
                 <element signature="method#getPublications#0;class#DatabaseServiceImpl#0" />
                 <element signature="docComment;method#getAuthors#0;class#DatabaseServiceImpl#0" />
@@ -97,7 +95,6 @@
                 <element signature="docComment;method#clear#0;class#DatabaseServiceImpl#0" />
                 <element signature="method#clear#0;class#DatabaseServiceImpl#0" />
                 <element signature="docComment;method#printXMLToConsole#0;class#DatabaseServiceImpl#0" />
-                <element signature="method#printXMLToConsole#0;class#DatabaseServiceImpl#0" />
                 <element signature="docComment;method#saveXMLToFile#0;class#DatabaseServiceImpl#0" />
                 <element signature="method#saveXMLToFile#0;class#DatabaseServiceImpl#0" />
                 <element signature="method#DoNothasDuplicate#0;class#DatabaseServiceImpl#0" />
@@ -107,15 +104,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Author.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ConsoleMenu#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="104" column="67" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
+            <state relative-caret-position="362">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
+                <element signature="docComment;method#MainServiceImpl#0;class#MainServiceImpl#0" />
+                <element signature="method#MainServiceImpl#0;class#MainServiceImpl#0" />
                 <element signature="docComment;method#validate#0;class#MainServiceImpl#0" />
-                <element signature="method#validate#0;class#MainServiceImpl#0" />
-                <element signature="docComment;method#load#0;class#MainServiceImpl#0" />
-                <element signature="method#load#0;class#MainServiceImpl#0" />
+                <element signature="e#1739#1822#0" />
+                <element signature="method#create#0;class#MainServiceImpl#0" />
               </folding>
             </state>
           </provider>
@@ -144,19 +178,20 @@
         <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/PublicationType.java" />
         <option value="$PROJECT_DIR$/gradlew" />
         <option value="$PROJECT_DIR$/database3.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Publication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/ui/ConsoleHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/Console.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/DatabaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
+    <option name="width" value="714" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -166,81 +201,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="literature" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="literature" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="literature" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="literature" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -451,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559945881313</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Inserting new elements and cases">
+      <created>1560071119356</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560071119356</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -479,13 +457,19 @@
     <history-entry file="Assignment2_[check] - 2019.06.07 at 00h 37m 01s.xml">
       <configuration name="Assignment2 [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Assignment2_[test] - 2019.06.10 at 13h 15m 53s.xml">
+      <configuration name="Assignment2 [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Assignment2_[test] - 2019.06.10 at 14h 13m 00s.xml">
+      <configuration name="Assignment2 [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="948" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31456953" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21101573" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24944812" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -493,8 +477,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22019465" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22019465" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39902675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -503,7 +487,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.3296837" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32955974" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3296837" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -514,6 +498,7 @@
       <window_info anchor="right" id="Gradle" order="6" weight="0.2274678" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.04464286" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -521,19 +506,15 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value=".." />
     <MESSAGE value="Creation of the ConsoleMenu Classes where all Menus will be implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of the ConsoleMenu Classes where all Menus will be implemented" />
+    <MESSAGE value="Inserting new elements and cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserting new elements and cases" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Assignment2$Main.ic" NAME="Main Coverage Results" MODIFIED="1560165078556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.uniba.wiai.dsg.ajp.assignment2.literature.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/DatabaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
-          <folding>
-            <element signature="docComment;method#printXMLToConsole#0;class#DatabaseService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -559,29 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema1.xsd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/schema1.xsd" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/PublicationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -607,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1057">
@@ -634,44 +586,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="104" column="67" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
-          <folding>
-            <element signature="docComment;method#validate#0;class#MainServiceImpl#0" />
-            <element signature="method#validate#0;class#MainServiceImpl#0" />
-            <element signature="docComment;method#load#0;class#MainServiceImpl#0" />
-            <element signature="method#load#0;class#MainServiceImpl#0" />
-          </folding>
+        <state relative-caret-position="-3875">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/ui/ConsoleHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="3553">
+          <caret line="202" column="24" lean-forward="true" selection-start-line="202" selection-start-column="24" selection-end-line="202" selection-end-column="24" />
           <folding>
             <element signature="docComment;method#askNonEmptyString#0;class#ConsoleHelper#0" />
-            <element signature="method#askNonEmptyString#0;class#ConsoleHelper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/DatabaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#printXMLToConsole#0;class#DatabaseService#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="351">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ConsoleMenu#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/model/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/DatabaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="341">
+          <caret line="183" column="12" selection-start-line="183" selection-start-column="12" selection-end-line="184" selection-end-column="52" />
           <folding>
             <element signature="docComment;method#addPublication#0;class#DatabaseServiceImpl#0" />
             <element signature="method#addPublication#0;class#DatabaseServiceImpl#0" />
@@ -679,7 +662,8 @@
             <element signature="method#removePublicationByID#0;class#DatabaseServiceImpl#0" />
             <element signature="docComment;method#removeAuthorByID#0;class#DatabaseServiceImpl#0" />
             <element signature="method#removeAuthorByID#0;class#DatabaseServiceImpl#0" />
-            <element signature="e#3438#3507#1" />
+            <element signature="docComment;method#addAuthor#0;class#DatabaseServiceImpl#0" />
+            <element signature="method#addAuthor#0;class#DatabaseServiceImpl#0" />
             <element signature="docComment;method#getPublications#0;class#DatabaseServiceImpl#0" />
             <element signature="method#getPublications#0;class#DatabaseServiceImpl#0" />
             <element signature="docComment;method#getAuthors#0;class#DatabaseServiceImpl#0" />
@@ -687,7 +671,6 @@
             <element signature="docComment;method#clear#0;class#DatabaseServiceImpl#0" />
             <element signature="method#clear#0;class#DatabaseServiceImpl#0" />
             <element signature="docComment;method#printXMLToConsole#0;class#DatabaseServiceImpl#0" />
-            <element signature="method#printXMLToConsole#0;class#DatabaseServiceImpl#0" />
             <element signature="docComment;method#saveXMLToFile#0;class#DatabaseServiceImpl#0" />
             <element signature="method#saveXMLToFile#0;class#DatabaseServiceImpl#0" />
             <element signature="method#DoNothasDuplicate#0;class#DatabaseServiceImpl#0" />
@@ -695,12 +678,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/ConsoleMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/uniba/wiai/dsg/ajp/assignment2/literature/logic/impl/MainServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
+        <state relative-caret-position="362">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#MainServiceImpl#0;class#MainServiceImpl#0" />
+            <element signature="method#MainServiceImpl#0;class#MainServiceImpl#0" />
+            <element signature="docComment;method#validate#0;class#MainServiceImpl#0" />
+            <element signature="e#1739#1822#0" />
+            <element signature="method#create#0;class#MainServiceImpl#0" />
           </folding>
         </state>
       </provider>
@@ -711,6 +698,30 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -724,11 +735,24 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>11.0.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Assignment2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -748,6 +772,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: com.sun.istack:istack-commons-runtime:3.0.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

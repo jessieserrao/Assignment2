@@ -15,6 +15,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO startet eure Anwendung ueber diese main-Methode
-		/**
+
 		JAXBContext context;
 
 		try{
@@ -48,23 +49,31 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 */
-
-			ConsoleMenu.Menu();
 
 
+			//ConsoleMenu.Menu();
+
+			try{
+			//DatabaseServiceImpl dbI =new DatabaseServiceImpl();
 			MainServiceImpl dbs =new MainServiceImpl();
-			dbs.create();
+			//dbI.clear();
+			//dbI.printXMLToConsole();
+
+
 			//dbs.validate("database.xml");
-			//dbs.load("database.xml");
+			dbs.load("database2.xml");
 
 
-			DatabaseServiceImpl dbI =new DatabaseServiceImpl();
+			//DatabaseServiceImpl dbI =new DatabaseServiceImpl();
 			//dbI.addAuthor("Jessie", "jessie@hotmail.com", "10" );
 			//dbI.addPublication("titulo", 1919, BOOK, author, "33" );
 
 			//dbI.printXMLToConsole();
 
+
+			}catch (LiteratureDatabaseException e){
+				System.out.println(MessageFormat.format("the following Error occurred: {0}", e.getMessage()));
+			}
 
 
 
