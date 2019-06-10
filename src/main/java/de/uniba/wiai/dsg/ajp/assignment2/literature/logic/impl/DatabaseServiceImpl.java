@@ -23,6 +23,8 @@ import javax.xml.bind.Marshaller;
 
 public class DatabaseServiceImpl extends Database implements DatabaseService{
 
+	Database db = new Database();
+
 	/**
 	 * Adds a new publication.
 	 *
@@ -93,15 +95,15 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 	 * @throws LiteratureDatabaseException if any of the above preconditions are not met
 	 */
 	@Override
-	public void removeAuthorByID(String id)
-			throws LiteratureDatabaseException {
-		Database db = new Database();
+	public void removeAuthorByID(String id) throws LiteratureDatabaseException {
 
-		if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
-			db.getAuthors().contains(id);
-			db.getAuthors().remove(id);
-		} else {
-			throw new LiteratureDatabaseException();
+		if (id != null && !id.isEmpty()) {
+			for(int i= 0; i<getAuthors().size();i++) {
+				if(getAuthors().get(i).getId().matches(id)) {
+					getAuthors().remove(i);
+					break;
+				}
+			}
 		}
 	}
 
@@ -116,20 +118,17 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 	 * @throws LiteratureDatabaseException if any of the above preconditions are not met
 	 */
 	@Override
-	public void addAuthor(String name, String email, String id)
-			throws LiteratureDatabaseException {
+	public void addAuthor(String name, String email, String id) throws LiteratureDatabaseException {
 		Author newAuthor = new Author();
 
-		if ( name != null && !name.isEmpty() ) {
-			newAuthor.setName(name);
-		}
-		else if ( email != null && !email.isEmpty() && ValidationHelper.isEmail(email) ) {
-			newAuthor.setEmail(email);
-		}
-		else if ( id != null && id.isEmpty() && ValidationHelper.isId(id) ) {
-			newAuthor.setId(id);
-		} else {throw new LiteratureDatabaseException();}
-
+		//	if (name != null && !name.isEmpty()) {
+		newAuthor.setName(name);
+		//} else if (email != null && !email.isEmpty()) {
+		newAuthor.setEmail(email);
+		//} else if (id != null && id.isEmpty()) {
+		newAuthor.setId(id);
+		//	}
+		getAuthors().add(newAuthor);
 	}
 
 	/**
@@ -150,8 +149,7 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 	 */
 	@Override
 	public List<Author> getAuthors() {
-		Database getAuthorsFromDataBase = new Database();
-		return getAuthorsFromDataBase.getAuthors();
+		return db.getAuthors();
 	}
 
 	/**
