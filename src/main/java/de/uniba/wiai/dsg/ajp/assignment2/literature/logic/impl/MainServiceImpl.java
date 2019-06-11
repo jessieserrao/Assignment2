@@ -55,6 +55,7 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 			jaxbContext = JAXBContext.newInstance(Database.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			dsI.db = (Database) jaxbUnmarshaller.unmarshal(new File(path));
+			System.out.println(dsI);
 			return dsI;
 
 		}catch (JAXBException e){

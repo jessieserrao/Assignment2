@@ -59,7 +59,7 @@ public class Main {
 			MainServiceImpl dbs =new MainServiceImpl();
 			//dbI.clear();
 
-
+			dbI.db.getAuthors();
 
 
 			dbs.validate("database.xml");
