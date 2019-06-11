@@ -3,7 +3,6 @@ package de.uniba.wiai.dsg.ajp.assignment2.literature.logic.impl;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.LiteratureDatabaseException;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.ValidationHelper;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Author;
-import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Database;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Publication;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.PublicationType;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.ui.ConsoleHelper;
@@ -15,12 +14,6 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 
 
-// switch cases implementation are incomplete and load issue still unsolved..  OBS:
-/**
- Zur Interaktion mit der Kommandozeile ist die Hilfsklasse ConsoleHelper verfuegbar. Diese erlaubt u.a.
- das Einlesen von Zeichenketten, Zahlen und der Auswahl eines oder mehrerer Elemente aus einem Array von der Konsole.
- Die JavaDoc-Beschreibungen der oeffentlichen Methoden enthalten Anwendungsbeispiele, die Sie als Starthilfe verwenden koennen.
-*/
 public class ConsoleMenu extends DatabaseServiceImpl {
 
     public ConsoleMenu() {
@@ -28,14 +21,14 @@ public class ConsoleMenu extends DatabaseServiceImpl {
     }
 
 
-    // this is the Main Menu first step!
+
     public static void Menu() {
         try {
             InputStreamReader isr = new InputStreamReader(System.in);
             BufferedReader br = new BufferedReader(isr);
 
             int Zahl = 1;
-            while (Zahl != 0) {// I cant think a better way to solve this condition() right now
+            while (Zahl != 0) {
                 System.out.println("::::::::::::::::::::::::: Uni Bamberg Database :::::::::::::::::::::::::\n" +
                         "( 1 ) Load and Validate Literature Database\n" +
                         "( 2 ) Create New Literature Database\n" +
@@ -89,7 +82,7 @@ public class ConsoleMenu extends DatabaseServiceImpl {
         BufferedReader br = new BufferedReader(isr);
         DatabaseServiceImpl createdDatabase = new DatabaseServiceImpl();
         int option;
-        try {  // we need to figure out how to implement this Menu!
+        try {
 
             do {
                 System.out.println("(1) Add Author\n" +

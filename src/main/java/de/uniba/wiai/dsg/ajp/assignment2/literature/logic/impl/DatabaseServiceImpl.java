@@ -37,7 +37,7 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 			if (type != null) publication.setType(type);
 			if (authors != null && !authors.isEmpty() && DoNothasDuplicate(authors)) publication.setAuthors(authors);
 			if (id != null && !id.isEmpty()) publication.setId(id);
-		}
+		}else {throw new LiteratureDatabaseException();}
 		getPublications().add(publication);
 	}
 
@@ -53,7 +53,7 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 					break;
 				}
 			}
-		}
+		} else {throw new LiteratureDatabaseException();}
 	}
 
 	@Override
@@ -103,30 +103,14 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 		removeAllAuthorsAndBooks.getPublications().clear();
 	}
 
-	/**
-	 * Prints the current database to the console by marshalling it to XML
-	 *
-	 * @throws LiteratureDatabaseException if there are errors while marshalling the current database
-	 */
-	@Override
 	public void printXMLToConsole() throws LiteratureDatabaseException {
 
 		JAXBContext context;
 		try{
-			//call the XmlRootElement to create the object to be manipulated
 			context = JAXBContext.newInstance(Database.class);
 			db.getAuthors();
 			db.getPublications();
-			 /*
-			// XML doc -->Java Code   // Unmarshalling (TO CHECK IF IS WORKING)
-			Unmarshaller um = context.createUnmarshaller();
-			Database db = (Database) um.unmarshal(new File("database.xml"));
-			db.getAuthors();
-			db.getPublications();
-			  */
-			//automatic Java Code -->  XML Document  //Create Marshaller
 			Marshaller ms = context.createMarshaller();
-			//Required formatting??
 			ms.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			ms.marshal(db, new PrintWriter(System.out));
 		}catch (JAXBException e){
@@ -135,32 +119,17 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 		}
 	}
 
-	/**
-	 * Saves the current database to the given file by marshalling it to XML
-	 *
-	 * @param path the path of the file. Must not be null or empty.
-	 * @throws LiteratureDatabaseException if path is null or empty or there are errors during
-	 *                                     marshalling the current database
-	 */
-	@Override
+
 	public void saveXMLToFile(String path) throws LiteratureDatabaseException{
 		JAXBContext context;
 		try{
-			//call the XmlRootElement to create the object to be manipulated
 			context = JAXBContext.newInstance(Database.class);
 			db.getAuthors();
 			db.getPublications();
-			 /*
-			// XML doc -->Java Code   // Unmarshalling (TO CHECK IF IS WORKING)
-			Unmarshaller um = context.createUnmarshaller();
-			Database db = (Database) um.unmarshal(new File("database.xml"));
-			db.getAuthors();
-			db.getPublications();
-			  */
-			//automatic Java Code -->  XML Document  //Create Marshaller
 			Marshaller ms = context.createMarshaller();
 			ms.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			ms.marshal(db, new File("database_Output.xml"));
+			System.out.println();
 		}catch (JAXBException e){
 			System.out.println("Exception: "+e.getMessage() + e.getErrorCode());
 			throw new LiteratureDatabaseException();
