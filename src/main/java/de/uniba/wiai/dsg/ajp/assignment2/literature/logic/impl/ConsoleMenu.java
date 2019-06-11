@@ -270,7 +270,10 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                         break;
 
                     case 8:
-
+                        System.out.println("Please enter with the XML-File to save the currently Database: ");
+                        String saveToFile = br.readLine();
+                        createdDatabase.saveXMLToFile(saveToFile);
+                        System.out.println("The file " + saveToFile + " has been added in our the database");
                         break;
 
                     case 0:
