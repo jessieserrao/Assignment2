@@ -84,7 +84,7 @@ public class ConsoleMenu extends DatabaseServiceImpl {
         BufferedReader br = new BufferedReader(isr);
         DatabaseServiceImpl createdDatabase = new DatabaseServiceImpl();
         int option;
-        try {
+        try {  // we need to figure out how to implement this Menu!
 
             do {
                 System.out.println("(1) Add Author\n" +
@@ -113,11 +113,11 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                         System.out.println("Please enter the id of the new author: ");
                         String authorID = (br.readLine());
                         while (!ValidationHelper.isId(authorID)) {
-                            System.out.println("please enter a valid id:  An ID has to start with a letter followed by zero or more letters or numbers.");
+                            System.out.println("please enter a valid id");
                             authorID = br.readLine();
                         }
                         createdDatabase.addAuthor(authorName, authorEmail, authorID);
-                        System.out.println("The author: " + authorName + " with email: " + authorEmail + " and id: " + authorID + " has been added to the database");
+                        System.out.println("The author " + authorName + " with email " + authorEmail + " and id " + authorID + " has been added to the database");
                         break;
 
                     case 2:
@@ -144,31 +144,118 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                         System.out.println("Please enter the year the publication was published: ");
                         int pubYear = Integer.parseInt(br.readLine());
 
-                        System.out.println("Please enter the type of the publication: ");
-                        String pubType = br.readLine();
+                        System.out.println("Please choose the type of the publication:\n"+
+                                "(1) Book\n" +
+                                "(2) Article\n" +
+                                "(3) Inproceedings\n" +
+                                "(4) Masterthesis\n" +
+                                "(5) PHD Thesis\n" +
+                                "(6) Techreport\n");
+                        PublicationType publicationType = null;
+                        int pubTypeChooser = Integer.parseInt(br.readLine());
+                        switch (pubTypeChooser){
+                            case 1:
+                                publicationType = PublicationType.BOOK;
+                                break;
+                            case 2:
+                                publicationType = PublicationType.ARTICLE;
+                                break;
+                            case 3:
+                                publicationType = PublicationType.INPROCEEDINGS;
+                                break;
+                            case 4:
+                                publicationType = PublicationType.MASTERSTHESIS;
+                                break;
+                            case 5:
+                                publicationType = PublicationType.PHDTHESIS;
+                                break;
+                            case 6:
+                                publicationType = PublicationType.TECHREPORT;
+                                break;
+                        }
 
-                        System.out.println("Please enter the author(s) of the publication: ");
+                        ArrayList<String> pubAuthorsStringList = new ArrayList<String>();
+                        System.out.println("Please enter the author of the publication: ");
                         String pubAuthorsString = br.readLine();
+                        pubAuthorsStringList.add(pubAuthorsString);
+
+                        boolean moreAuthors = true;
+                        do {
+                            System.out.println("Do you want to enter additional authors for the publication?(y/n)");
+                            String yesOrNo = br.readLine();
+                            switch (yesOrNo) {
+                                case "y":
+                                    System.out.println("Please enter another author of the publication: ");
+                                    pubAuthorsString = br.readLine();
+                                    pubAuthorsStringList.add(pubAuthorsString);
+                                    break;
+                                case "n":
+                                    moreAuthors = false;
+                                    break;
+                            }
+                        } while(moreAuthors);
+
+                        Author pubAuthor = new Author();
+                        ArrayList<Author> pubAuthors = new ArrayList<Author>();
+                        for(int k = 0; k<pubAuthorsStringList.size(); k++) {
+                            pubAuthor.setName(pubAuthorsStringList.get(k));
+                            pubAuthors.add(pubAuthor);
+                            k++;
+                        }
 
                         System.out.println("Please enter the id of the publication: ");
                         String pubID = br.readLine();
+                        while (!ValidationHelper.isId(pubID)) {
+                            System.out.println("please enter a valid id");
+                            pubID = br.readLine();
+                        }
 
-                        // createdDatabase.addPublication();
-                        break;
 
-                    case 4:
 
-                        break;
+                        createdDatabase.addPublication(pubTitle,pubYear,publicationType,pubAuthors,pubID);
 
-                    case 5:
-                        System.out.println("Authors currently in Database: ");
-                        for (int j = 0; j < createdDatabase.getAuthors().size(); j++) {
-                            System.out.println("Name:" + createdDatabase.getAuthors().get(j).getName() + " ID:" + createdDatabase.getAuthors().get(j).getId());
+                        System.out.println("The publication " + pubTitle + " published in year " + pubYear + " of the type " + publicationType + " with the author(s) "+pubAuthorsStringList+" and the id "+pubID+" has been added to the database");
+
+                        Publication publication = new Publication();
+                        publication.setTitle(pubTitle);
+                        publication.setYearPublished(pubYear);
+                        publication.setType(publicationType);
+                        publication.setAuthors(pubAuthors);
+                        publication.setId(pubID);
+
+
+                        for (i = 0; i < createdDatabase.getAuthors().size(); i++) {
+                            if (createdDatabase.getAuthors().get(i).getId().contains(pubAuthorsString)) {
+                                System.out.println("Author with the Name " + pubAuthorsString + "is already in the database. The Publication "+publication.getTitle()+" will be linked to the author.");
+                                createdDatabase.getAuthors().get(i).getPublications().add(publication);
+
+                            }
                         }
                         break;
 
-                    case 6:
+                    case 4:
+                        System.out.println("Please enter the id of the publication that should be removed ");
+                        String removePubID = (br.readLine());
+                        boolean found = false;
 
+                        for (i = 0; i < createdDatabase.getPublications().size(); i++) {
+                            if (createdDatabase.getPublications().get(i).getId().contains(removePubID)) {
+                                System.out.println("Publication with the id " + removePubID + " has been found and removed from the database");
+                                createdDatabase.removePublicationByID(removePubID);
+                                found = true;
+                            }
+                        }
+                        if (!found)
+                            System.out.println("Publication with the id " + removePubID + " has not been found in the database");
+                        break;
+                    case 5:
+                        System.out.println("Authors currently in Database: ");
+                        System.out.println(createdDatabase.getAuthors().toString());
+                        break;
+
+                    case 6:
+                        System.out.println("Publications currently in Database: ");
+                        System.out.println(createdDatabase.getPublications().toString());
                         break;
 
                     case 7:
@@ -180,25 +267,26 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                         break;
 
                     case 0:
-
-                        break;
+                        Menu();
 
 
                 }
             } while (option != 0);
-       }catch (LiteratureDatabaseException e) {
-           System.out.println("the following Error occurred: " + e.getMessage());
+        } catch (LiteratureDatabaseException e) {
+            System.out.println("the following Error occurred: " + e.getMessage());
 
-       }catch (IOException f){
-           System.out.println(MessageFormat.format("the following Error occurred: {0}", f.getMessage()));
-       }finally {
-                   try{
-                       isr.close();
-                       br.close();
-                   }catch (IOException e){
-                       System.out.println("the following Error occurred: " + e.getMessage());
-                   }
-       }
+        } catch (IOException f) {
+            System.out.println(MessageFormat.format("the following Error occurred: {0}", f.getMessage()));
+        } finally {
+            try {
+                isr.close();
+                br.close();
+            } catch (IOException e) {
+                System.out.println("the following Error occurred: " + e.getMessage());
+            }
+        }
+
+
     }
 
 
