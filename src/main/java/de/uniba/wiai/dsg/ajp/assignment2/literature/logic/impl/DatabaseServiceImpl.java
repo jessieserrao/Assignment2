@@ -102,7 +102,7 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 					break;
 				}
 			}
-		}
+		}else { throw new LiteratureDatabaseException();}
 	}
 
 	/**
@@ -119,14 +119,17 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 	public void addAuthor(String name, String email, String id) throws LiteratureDatabaseException {
 		Author newAuthor = new Author();
 
-		//	if (name != null && !name.isEmpty()) {
-		newAuthor.setName(name);
-		//} else if (email != null && !email.isEmpty()) {
-		newAuthor.setEmail(email);
-		//} else if (id != null && id.isEmpty()) {
-		newAuthor.setId(id);
-		//	}
-		getAuthors().add(newAuthor);
+		if ( name != null && !name.isEmpty() ) {
+			newAuthor.setName(name);
+			if ( ValidationHelper.isEmail(email) && email != null && !email.isEmpty() ) {
+				newAuthor.setEmail(email);
+				if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
+					newAuthor.setId(id);
+
+					getAuthors().add(newAuthor);
+				}
+			}
+		} else { throw new LiteratureDatabaseException();}
 	}
 
 	/**

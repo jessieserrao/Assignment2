@@ -51,7 +51,7 @@ public class Main {
 		}
 */
 
-			//ConsoleMenu.Menu();
+			ConsoleMenu.Menu();
 
 			try{
 			//DatabaseServiceImpl dbI =new DatabaseServiceImpl();

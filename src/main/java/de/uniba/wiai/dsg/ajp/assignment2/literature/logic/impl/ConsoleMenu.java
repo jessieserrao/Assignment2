@@ -108,7 +108,7 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                         System.out.println("Please enter the id of the new author: ");
                         String authorID = (br.readLine());
                         while (!ValidationHelper.isId(authorID)) {
-                            System.out.println("please enter a valid id");
+                            System.out.println("please enter a valid id:  An ID has to start with a letter followed by zero or more letters or numbers.");
                             authorID = br.readLine();
                         }
                         createdDatabase.addAuthor(authorName, authorEmail, authorID);
