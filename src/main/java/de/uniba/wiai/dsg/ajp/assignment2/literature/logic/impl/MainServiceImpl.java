@@ -7,10 +7,7 @@ import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Database;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.*;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -43,7 +40,7 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 
 		try {
 			SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-			Schema schema = factory.newSchema(new File("schema2.xsd"));
+			Schema schema = factory.newSchema(new File("schema.xsd"));
 			Validator validator = schema.newValidator();
 			validator.validate(new StreamSource(new File(path)));
 			System.out.println("The XML Document: " + path + " is valid \n" );
@@ -69,24 +66,17 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 	public DatabaseService load(String path) throws LiteratureDatabaseException {
 
 		JAXBContext jaxbContext;
-		try {
-			jaxbContext = JAXBContext.newInstance(DatabaseServiceImpl.class);
-
+		try {DatabaseServiceImpl dsI = new DatabaseServiceImpl();
+			jaxbContext = JAXBContext.newInstance(Database.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-
-			DatabaseServiceImpl db = (DatabaseServiceImpl) jaxbUnmarshaller.unmarshal(new File(path));
-			db.getAuthors();
-			db.getPublications();
-			return db;
+			dsI.db = (Database) jaxbUnmarshaller.unmarshal(new File(path));
+			return dsI;
 
 		}catch (JAXBException e){
 			System.out.println("Exception: "+e.getMessage() + e.getErrorCode());
 			throw new LiteratureDatabaseException();
-
-
 		}
 	}
-
 
 	/**
 	 * Creates a new and empty literature database
@@ -96,7 +86,7 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 	 */
 	@Override
 	public DatabaseService create() throws LiteratureDatabaseException{
-			DatabaseServiceImpl dbI = new DatabaseServiceImpl();
+			DatabaseService dbI = new DatabaseServiceImpl();
 			return dbI;
 	}
 

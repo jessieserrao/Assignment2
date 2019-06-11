@@ -1,14 +1,16 @@
 package de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model;
 
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.DatabaseService;
-import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.LiteratureDatabaseException;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.LinkedList;
 import java.util.List;
 
-@XmlRootElement(name="database")
+
+@XmlRootElement(name = "database")
 public class Database {
 
 	private List<Author> authors = new LinkedList<>();

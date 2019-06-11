@@ -1,6 +1,7 @@
 package de.uniba.wiai.dsg.ajp.assignment2.literature.logic.impl;
 
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.LiteratureDatabaseException;
+import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.ValidationHelper;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.ui.ConsoleHelper;
 
 import java.io.BufferedReader;
@@ -49,8 +50,13 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                     case 2: //Create New Literature Database and calls CreateNewDatabase method.
                         System.out.println("########## UNI Bamberg Database ########## ");
                         MainServiceImpl mainService = new MainServiceImpl();
-                        mainService.create();
-                        ConsoleMenu.CreateNewDatabase();
+                        try{
+                            mainService.create();
+                            ConsoleMenu.CreateNewDatabase();
+                        }catch (LiteratureDatabaseException e){
+                            e.getMessage();
+                        }
+
 
                     case 0:
                         // give a option to end the program and close the Ressource

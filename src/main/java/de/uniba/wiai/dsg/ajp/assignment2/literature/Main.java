@@ -26,7 +26,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO startet eure Anwendung ueber diese main-Methode
 
-		JAXBContext context;
+		/*JAXBContext context;
 
 		try{
 			//call the XmlRootElement to create the object to be manipulated
@@ -35,7 +35,7 @@ public class Main {
 
 			// automatic XML doc -->Java Code   // Unmarshalling
 			Unmarshaller um = context.createUnmarshaller();
-			Database dataB = (Database) um.unmarshal(new File("database2.xml"));
+			Database dataB = (Database) um.unmarshal(new File("database.xml"));
 			dataB.getAuthors();
 			dataB.getPublications();
 
@@ -49,7 +49,7 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+*/
 
 			//ConsoleMenu.Menu();
 
@@ -61,7 +61,7 @@ public class Main {
 
 
 			//dbs.validate("database.xml");
-			dbs.load("database2.xml");
+			dbs.load("database.xml");
 
 
 			//DatabaseServiceImpl dbI =new DatabaseServiceImpl();

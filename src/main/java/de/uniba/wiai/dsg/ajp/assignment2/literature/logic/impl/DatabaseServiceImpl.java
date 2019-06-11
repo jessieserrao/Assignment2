@@ -15,15 +15,13 @@ import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Author;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Database;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Publication;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.PublicationType;
-
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
 public class DatabaseServiceImpl extends Database implements DatabaseService{
 
-	Database db = new Database();
+	public Database db = new Database();
 
 	/**
 	 * Adds a new publication.
