@@ -33,34 +33,26 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 
 		if (title != null) {
 			publication.setTitle(title);
+			if (yearPublished <= 0) publication.setYearPublished(yearPublished);
+			if (type != null) publication.setType(type);
+			if (authors != null && !authors.isEmpty() && DoNothasDuplicate(authors)) publication.setAuthors(authors);
+			if (id != null && !id.isEmpty()) publication.setId(id);
 		}
-		else if (yearPublished <= 0) {
-			publication.setYearPublished(yearPublished);
-		}
-		else if (type != null) {
-			publication.setType(type);
-		}
-		else if (authors != null && !authors.isEmpty() && DoNothasDuplicate(authors)) {
-			publication.setAuthors(authors);
-		}
-		else if (ValidationHelper.isId(id) && id != null && !id.isEmpty() && !publication.getId().contains(id)) {
-			publication.setId(id);
-		}else {
-			throw new LiteratureDatabaseException();
-		}
+		getPublications().add(publication);
 	}
 
 
 	@Override
-	public void removePublicationByID(String id)
-			throws LiteratureDatabaseException {
-		Database db = new Database();
+	public void removePublicationByID(String id) throws LiteratureDatabaseException {
 
-		if ( id != null && !id.isEmpty() && ValidationHelper.isId(id) ) {
-			db.getPublications().contains(id);
-			db.getPublications().remove(id);
-		} else {
-			throw new LiteratureDatabaseException();
+
+		if (id != null && !id.isEmpty()) {
+			for(int i= 0; i<getPublications().size();i++) {
+				if(getPublications().get(i).getId().matches(id)) {
+					getPublications().remove(i);
+					break;
+				}
+			}
 		}
 	}
 
@@ -96,8 +88,7 @@ public class DatabaseServiceImpl extends Database implements DatabaseService{
 
 	@Override
 	public List<Publication> getPublications() {
-		Database getPublicationsFromDataBase = new Database();
-		return getPublicationsFromDataBase.getPublications();
+		return db.getPublications();
 	}
 
 	@Override
