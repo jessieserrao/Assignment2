@@ -2,12 +2,17 @@ package de.uniba.wiai.dsg.ajp.assignment2.literature.logic.impl;
 
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.LiteratureDatabaseException;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.ValidationHelper;
+import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Author;
+import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Database;
+import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Publication;
+import de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.PublicationType;
 import de.uniba.wiai.dsg.ajp.assignment2.literature.ui.ConsoleHelper;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.MessageFormat;
+import java.util.ArrayList;
 
 
 // switch cases implementation are incomplete and load issue still unsolved..  OBS:
@@ -259,7 +264,9 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                         break;
 
                     case 7:
-
+                        System.out.println("################# Currently Database: ################# ");
+                        createdDatabase.printXMLToConsole();
+                        System.out.println("#######################################################\n ");
                         break;
 
                     case 8:

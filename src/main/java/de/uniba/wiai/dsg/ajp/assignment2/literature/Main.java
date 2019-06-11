@@ -25,7 +25,7 @@ import static de.uniba.wiai.dsg.ajp.assignment2.literature.logic.model.Publicati
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO startet eure Anwendung ueber diese main-Methode
+
 
 		/*JAXBContext context;
 
@@ -47,26 +47,23 @@ public class Main {
 			ms.marshal(dataB, new PrintWriter(System.out));
 
 		}catch (JAXBException e){
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 
 			*/
-			//ConsoleMenu.Menu();
+			ConsoleMenu.Menu();
 
 			try{
 			DatabaseServiceImpl dbI =new DatabaseServiceImpl();
 			MainServiceImpl dbs =new MainServiceImpl();
 			//dbI.clear();
 
-			dbI.db.getAuthors();
-
-
-			dbs.validate("database.xml");
-			dbs.load("database.xml");
+			//dbs.validate("database.xml");
+			//dbs.load("database.xml");
 
 			dbI.saveXMLToFile("database.xml");
-			dbI.printXMLToConsole();
+			//dbI.printXMLToConsole();
 
 			}catch (LiteratureDatabaseException e){
 				System.out.println(MessageFormat.format("the following Error occurred: {0}", e.getMessage()));
