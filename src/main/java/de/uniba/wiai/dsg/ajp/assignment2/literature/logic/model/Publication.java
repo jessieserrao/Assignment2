@@ -16,7 +16,7 @@ public class Publication {
 		super();
 	}
 
-	@XmlAttribute(name="publicationType", required = true)
+	@XmlAttribute
 	public PublicationType getType() {
 		return type;
 	}
@@ -25,7 +25,7 @@ public class Publication {
 		this.type = type;
 	}
 
-	@XmlAttribute(name="yearPublished", required = true)
+	@XmlAttribute
 	public int getYearPublished() {
 		return yearPublished;
 	}

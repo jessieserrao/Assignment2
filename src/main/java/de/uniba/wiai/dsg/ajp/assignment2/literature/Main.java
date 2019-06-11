@@ -15,6 +15,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.io.PrintWriter;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,41 +40,39 @@ public class Main {
 			dataB.getAuthors();
 			dataB.getPublications();
 
-
 			// automatic Java Code -->  XML Document  //Marshalling
 			Marshaller ms = context.createMarshaller();
 			ms.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			ms.marshal(dataB, new File("database.xml"));
+			ms.marshal(dataB, new PrintWriter(System.out));
 
 		}catch (JAXBException e){
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-*/
 
-			ConsoleMenu.Menu();
+			*/
+			//ConsoleMenu.Menu();
 
 			try{
-			//DatabaseServiceImpl dbI =new DatabaseServiceImpl();
+			DatabaseServiceImpl dbI =new DatabaseServiceImpl();
 			MainServiceImpl dbs =new MainServiceImpl();
 			//dbI.clear();
-			//dbI.printXMLToConsole();
 
 
-			//dbs.validate("database.xml");
+
+
+			dbs.validate("database.xml");
 			dbs.load("database.xml");
 
-
-			//DatabaseServiceImpl dbI =new DatabaseServiceImpl();
-			//dbI.addAuthor("Jessie", "jessie@hotmail.com", "10" );
-			//dbI.addPublication("titulo", 1919, BOOK, author, "33" );
-
-			//dbI.printXMLToConsole();
-
+			dbI.saveXMLToFile("database.xml");
+			dbI.printXMLToConsole();
 
 			}catch (LiteratureDatabaseException e){
 				System.out.println(MessageFormat.format("the following Error occurred: {0}", e.getMessage()));
 			}
+
+
 
 
 

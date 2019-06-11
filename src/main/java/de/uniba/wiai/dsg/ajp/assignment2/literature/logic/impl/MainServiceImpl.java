@@ -29,12 +29,6 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 	}
 
 
-	/**
-	 * Validates the XML file identified by <code>path</code> with an XML Schema file
-	 *
-	 * @param path the path to the XML file to be validated
-	 * @throws LiteratureDatabaseException if the file identified by <code>path</code> is not valid
-	 */
 	@Override
 	public void validate(String path) throws LiteratureDatabaseException {
 
@@ -43,8 +37,6 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 			Schema schema = factory.newSchema(new File("schema.xsd"));
 			Validator validator = schema.newValidator();
 			validator.validate(new StreamSource(new File(path)));
-			System.out.println("The XML Document: " + path + " is valid \n" );
-
 		} catch (SAXException e) {
 			System.out.println("the following Error occurred: " + e.getMessage());
 			throw new LiteratureDatabaseException();
@@ -55,13 +47,6 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 	}
 
 
-	/**
-	 * Loads an XML file by unmarshalling it into memory
-	 *
-	 * @param path the path of the XML file to be unmarshalled
-	 * @return a service handle (<code>DatabasService</code>) for manipulating the literature database
-	 * @throws LiteratureDatabaseException
-	 */
 	@Override
 	public DatabaseService load(String path) throws LiteratureDatabaseException {
 
@@ -78,16 +63,16 @@ public class MainServiceImpl extends DatabaseServiceImpl implements MainService 
 		}
 	}
 
-	/**
-	 * Creates a new and empty literature database
-	 *
-	 * @return a service handle (<code>DatabasService</code>) for manipulating the literature database
-	 * @throws LiteratureDatabaseException
-	 */
 	@Override
 	public DatabaseService create() throws LiteratureDatabaseException{
-			DatabaseService dbI = new DatabaseServiceImpl();
-			return dbI;
+			DatabaseServiceImpl NewDatabase = new DatabaseServiceImpl();
+			NewDatabase.db = new Database();
+
+		if ( NewDatabase != null ){
+			return NewDatabase;
+		}else {
+			throw new LiteratureDatabaseException();
+		}
 	}
 
 }

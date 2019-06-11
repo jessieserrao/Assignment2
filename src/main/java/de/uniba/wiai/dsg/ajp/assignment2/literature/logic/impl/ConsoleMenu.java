@@ -40,14 +40,20 @@ public class ConsoleMenu extends DatabaseServiceImpl {
                 int option = Integer.parseInt(br.readLine());
 
                 switch (option) {
-                    case 1: //Load and Validate Literature Database !! here still doesn't working because of the  load
+                    case 1:
                         MainServiceImpl msI = new MainServiceImpl();
-                        System.out.println("Please insert the XML File to be loaded in the Database and validated: ");
-                        //msI.load("");
-                        //msI.validate("");
+                        System.out.println("Please enter with the XML File to be loaded in the Database and validated: ");
+                        String XMLFile = br.readLine();
+                        try {
+                            msI.load(XMLFile);
+                            msI.validate(XMLFile);
+                        }catch (LiteratureDatabaseException e){
+                            System.out.println("the following Error occurred: " + e.getMessage());
+                        }
+                        System.out.println("The given XML File was successfully added and validated in our database: ");
                         break;
 
-                    case 2: //Create New Literature Database and calls CreateNewDatabase method.
+                    case 2:
                         System.out.println("########## UNI Bamberg Database ########## ");
                         MainServiceImpl mainService = new MainServiceImpl();
                         try{
@@ -59,7 +65,7 @@ public class ConsoleMenu extends DatabaseServiceImpl {
 
 
                     case 0:
-                        // give a option to end the program and close the Ressource
+
                         Zahl = 0;
                         System.out.println("Program will now stop");
 
@@ -72,14 +78,13 @@ public class ConsoleMenu extends DatabaseServiceImpl {
     }
 
 
-    // Second Menu if the User choose the the second option(2)!
     public static void CreateNewDatabase() {
 
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         DatabaseServiceImpl createdDatabase = new DatabaseServiceImpl();
         int option;
-        try {  // we need to figure out how to implement this Menu!
+        try {
 
             do {
                 System.out.println("(1) Add Author\n" +
